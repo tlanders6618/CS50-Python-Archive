@@ -40,6 +40,8 @@ def main(name=None, size=None): #params solely to be used by test_project.py
                 else:
                     print("Congratulations! You made it out of the dungeon alive.");
                     print("If you dare, there is always another out there, waiting to be explored...");
+            getInput("(Type any letter to end the game.", true); #fixes a bug with exe; console force closes after game ends, and player can't read the above messages
+            #now the program waits for input and only force closes after the player presses enter
             break;
 
 def getInput(message: str, type: bool): #returns valid string (true) or int (false) input from user
